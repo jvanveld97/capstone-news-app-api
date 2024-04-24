@@ -1,0 +1,38 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$320000$skKMaZQjJwGMIJO1MmeaoP$68b2U4VFPL1ZQYgYmM7sIJUWPDhKCrAJOrdz4MWnLq4=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "jordan@email.com",
+            "first_name": "Jordan",
+            "last_name": "VanVeldhuisen",
+            "email": "jordan@email.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2022-10-21T21:15:55.764Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$320000$6caQGznxTT5xOWckvjT6QO$YZTdqhVzw5XIXUcA2TrQsZuC4SJGBeFc2OYOIz6j8Lk=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "meg@alodon.com",
+            "first_name": "Meg",
+            "last_name": "Alodon",
+            "email": "meg@alodon.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2022-10-21T21:16:33.812Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    }
+]

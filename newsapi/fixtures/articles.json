@@ -1,0 +1,168 @@
+[
+    {
+      "model": "newsapi.article",
+      "pk": 1,
+      "fields": {
+        "url": "https://www.washingtonpost.com/nation/2024/04/22/trump-attorneys-bond-civil-fraud-appeal-conditions/",
+        "source_id": "the-washington-post",
+        "source_name": "The Washington Post",
+        "author": "El M. Calabrese",
+        "title": "Trump attorneys agree to new conditions on $175 million bond - The Washington Post",
+        "description": "The deal probably ends a challenge from state officials that had imperiled Trump’s ability to appeal a massive civil fraud judgment.",
+        "published_at": "2024-04-22T20:09:57Z",
+        "content": "NEW YORK, N.Y. Attorneys for former president Donald Trump agreed Monday to several new conditions on his $175 million bond deal probably ending a challenge from state officials that had imperiled Tr… [+1588 chars]",
+        "url_to_image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/6ID2IGXAQVEDAQ24GV4UQ6MCJE_size-normalized.jpg&w=1440"
+      }
+    },
+    {
+      "model": "newsapi.article",
+      "pk": 2,
+      "fields": {
+        "url": "https://www.theverge.com/2024/4/22/24137089/anker-qi2-maggo-magnetic-charging-station-macbook-air-13-deal-sale",
+        "source_id": "the-verge",
+        "source_name": "The Verge",
+        "author": "Sheena Vasani",
+        "title": "Anker's 8-in-1 charging station is matching its lowest price to date - The Verge",
+        "description": "Anker’s MagGo Magnetic Charging Station (8-in-1) is going for $30 off right now. You can also save on the 13-inch M3 MacBook Air, Roborock’s Q5 Pro, and the Fitbit Versa 4.",
+        "published_at": "2024-04-22T20:03:23Z",
+        "content": "Ankers 8-in-1 charging station is matching its lowest price to date\r\nAnkers 8-in-1 charging station is matching its lowest price to date\r\n / The M3-powered MacBook Air and Roborocks Q5 Pro robovac ar… [+3933 chars]",
+        "url_to_image": "https://cdn.vox-cdn.com/thumbor/u_4NcD8sabXum-1aKQHibxmd7jI=/0x0:3200x2126/1200x628/filters:focal(1600x1063:1601x1064)/cdn.vox-cdn.com/uploads/chorus_asset/file/25212720/Anker_Qi2_handson_1.jpg"
+      }
+    },
+    {
+      "model": "newsapi.article",
+      "pk": 3,
+      "fields": {
+        "url": "https://www.eonline.com/news/1399885/dominic-west-details-how-wife-catherine-fitzgerald-was-affected-by-lily-james-drama",
+        "source_id": "e-online",
+        "source_name": "Eonline.com",
+        "author": "Elyse Dupre",
+        "title": "Dominic West Details How Wife Catherine FitzGerald Was Affected by Lily James Drama - E! Online - E! NEWS",
+        "description": "Three and a half years after Dominic West was photographed with Lily James in Rome, The Crown actor reflected on how he and his wife Catherine FitzGerald navigated the media attention.",
+        "published_at": "2024-04-22T19:57:00Z",
+        "content": "By his own account, he was madly in love with his wife and had been for years and years.\r\n\"I fell in love with my wife when I was at university and I managed to persuade her to fall in love with me f… [+787 chars]",
+        "url_to_image": "https://akns-images.eonline.com/eol_images/Entire_Site/2020913/rs_1200x1200-201013071433-1200-Dominic-West-Lily-James.jpg?fit=around%7C1080:1080&output-quality=90&crop=1080:1080;center,top"
+      }
+    },
+    {
+      "model": "newsapi.article",
+      "pk": 4,
+      "fields": {
+        "url": "https://nypost.com/2024/04/22/sports/jets-trade-zach-wilson-to-broncos-to-end-qbs-failed-tenure/",
+        "source_id": "new-york-post",
+        "source_name": "New York Post",
+        "author": "Brian Costello",
+        "title": "Jets trade Zach Wilson to Broncos to end QB's failed tenure - New York Post ",
+        "description": "The Jets will also send a seventh-round pick, No. 256, to Denver and receive a sixth-round pick, No. 207, in the trade.",
+        "published_at": "2024-04-22T19:52:30Z",
+        "content": "The Zach Wilson era or error has come to an end for the Jets.\r\nThe team agreed to trade Wilson to the Broncos on Monday. \r\nThe Jets will also send a seventh-round pick, No. 256, to Denver and receive… [+4498 chars]",
+        "url_to_image": "https://nypost.com/wp-content/uploads/sites/2/2024/04/newspress-collage-qd51glva3-1713812419370.jpg?quality=75&strip=all&1713798091&w=1024"
+      }
+    },
+    {
+      "model": "newsapi.article",
+      "pk": 5,
+      "fields": {
+        "url": "https://www.cbsnews.com/news/trump-hush-money-trial-opening-statements-witness-testimony/",
+        "source_id": "cbs-news",
+        "source_name": "CBS News",
+        "author": "Graham Kates, Katrina Kaufman, Stefan Becket",
+        "title": "Trump trial in \"hush money\" case gets underway with opening statements and first witness - CBS News",
+        "description": "Jurors in former President Donald Trump's criminal trial in New York got their first glimpse of the arguments both sides plan to make.",
+        "published_at": "2024-04-22T19:45:04Z",
+        "content": "Jurors in former President Donald Trump's criminal trial in New York got their first glimpse Monday of the arguments both sides plan to make over the course of the historic proceedings, with the pros… [+8849 chars]",
+        "url_to_image": "https://assets3.cbsnewsstatic.com/hub/i/r/2024/04/22/aea9e0f4-d10d-4102-8574-88e561a1e829/thumbnail/1200x630/ea0e99bbb05ec6e2eb23eeddd16e283b/gettyimages-2148006783.jpg?v=57e8fa9efcf044a821348136ff26ed69"
+      }
+    },
+    {
+      "model": "newsapi.article",
+      "pk": 6,
+      "fields": {
+        "url": "https://www.salon.com/2024/04/22/the-spice-girls-reunite-for-victoria-beckhams-50th-birthday-party/",
+        "source_id": "salon",
+        "source_name": "Salon",
+        "author": "Sandy",
+        "title": "The Spice Girls reunite for Victoria Beckham's 50th birthday party - Salon",
+        "description": "The Spice Girls reunite for Victoria Beckham's 50th birthday party",
+        "published_at": "2024-04-22T19:43:00Z",
+        "content": "N/A",
+        "url_to_image": "https://mediaproxy.salon.com/width/1200/https://media2.salon.com/2024/04/spice_girls.jpg"
+      }
+    },
+    {
+      "model": "newsapi.article",
+      "pk": 7,
+      "fields": {
+        "url": "https://www.foxweather.com/extreme-weather/taiwan-earthquakes-april-23-2024",
+        "source_id": "fox-weather",
+        "source_name": "Foxweather.com",
+        "author": "Aaron Barker",
+        "title": "Taiwan hit by at least 2 earthquakes - Fox Weather ",
+        "description": "At least two strong quakes shook the island nation of Taiwan early Tuesday morning. This comes just weeks after a stronger earthquake killed several people.",
+        "published_at": "2024-04-22T19:33:00Z",
+        "content": "TAIPEI, Taiwan – At least two strong earthquakes struck Taiwan early Tuesday morning, just weeks after one of the strongest quakes in the country’s history killed several people.\r\nAccording to the U.… [+1275 chars]",
+        "url_to_image": "https://images.foxweather.com/static.foxweather.com/www.foxweather.com/content/uploads/2023/08/1024/512/earthquake-notext.jpg?ve=1&tl=1"
+      }
+    },
+    {
+      "model": "newsapi.article",
+      "pk": 8,
+      "fields": {
+        "url": "https://phys.org/news/2024-04-nasa-voyager-resumes-earth.html",
+        "source_id": "phys-org",
+        "source_name": "Phys.Org",
+        "author": "Science X",
+        "title": "NASA's Voyager 1 resumes sending engineering updates to Earth - Phys.org",
+        "description": "For the first time since November, NASA's Voyager 1 spacecraft is returning usable data about the health and status of its onboard engineering systems. ",
+        "published_at": "2024-04-22T19:26:13Z",
+        "content": "NASA's Voyager 1 resumes sending engineering updates to Earth\r\nFor the first time since November, NASA's Voyager 1 spacecraft is returning usable data about the health and status of its onboard engin… [+3289 chars]",
+        "url_to_image": "https://scx1.b-cdn.net/csz/news/800/2024/nasasvoyager.jpg"
+      }
+    },
+    {
+      "model": "newsapi.article",
+      "pk": 9,
+      "fields": {
+        "url": "https://www.cnbc.com/2024/04/22/mark-cuban-the-next-10-years-in-tech-will-make-the-last-30-look-embarrassing.html",
+        "source_id": "cnbc",
+        "source_name": "CNBC",
+        "author": "Jessica Bursztynsky",
+        "title": "Mark Cuban: The next 10 years in tech will make the last 30 look 'embarrassing' - CNBC",
+        "description": "Billionaire entrepreneur Mark Cuban predicts the next decade in technology will make the last 30 years look small.",
+        "published_at": "2024-04-22T19:25:08Z",
+        "content": "Billionaire entrepreneur Mark Cuban predicts the next decade in technology will make the last 30 years look small.\r\n\"What we’ve seen in the last 10 years is nothing compared to what the next 10 years… [+2027 chars]",
+        "url_to_image": "https://image.cnbcfm.com/api/v1/image/106936621-1630552991494-gettyimages-1329048699-AFP_91N3F6.jpg?v=1630553092"
+      }
+    },
+    {
+      "model": "newsapi.article",
+      "pk": 10,
+      "fields": {
+        "url": "https://abcnews.go.com/Politics/memo-reveals-tensions-joebidens-foreign-policy-team/story?id=84720959",
+        "source_id": "abc-news",
+        "source_name": "ABC News",
+        "author": "Conor Finnegan,Trish Turner",
+        "title": "Memo reveals tensions within Joe Biden's foreign policy team - ABC News",
+        "description": "The internal memo documents a series of disputes among top Biden aides over major foreign policy decisions.",
+        "published_at": "2024-04-22T19:20:00Z",
+        "content": "An internal memo obtained by ABC News documents a series of disputes among top Biden aides over major foreign policy decisions, highlighting the conflicting views and pressure points inside the Biden … [+6539 chars]",
+        "url_to_image": "https://s.abcnews.com/images/International/afghanistan-evacuation-02-gty-jef-220412_16x9t_992.jpg"
+      }
+    },
+    {
+      "model": "newsapi.article",
+      "pk": 11,
+      "fields": {
+        "url": "https://www.aljazeera.com/news/2024/4/22/china-covid-19-cases-hit-5-month-high",
+        "source_id": "al-jazeera",
+        "source_name": "Al Jazeera",
+        "author": "Pauly",
+        "title": "China COVID-19 cases hit 5-month high - Al Jazeera English",
+        "description": "The rise in cases comes amid a series of stringent containment measures aimed at stopping the spread of the highly infectious Omicron variant.",
+        "published_at": "2024-04-22T19:09:00Z",
+        "content": "The number of new COVID-19 cases in China has surged to a five-month high, as the highly infectious Omicron variant continues to spread in the world's most populous country.\r\nChina's National Health C… [+2976 chars]",
+        "url_to_image": "https://www.aljazeera.com/wp-content/uploads/2023/09/china-variant.jpg?resize=570%2C380"
+      }
+    }
+  ]
+  
