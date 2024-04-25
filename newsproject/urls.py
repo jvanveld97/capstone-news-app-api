@@ -1,10 +1,12 @@
 from django.contrib import admin
 from django.urls import include, path
 from rest_framework import routers
-from newsapi.views import UserViewSet, ArticleViewSet
+from newsapi.views import UserViewSet, ArticleViewSet, CommentViewSet
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r"articles", ArticleViewSet, "article")
+router.register(r"comments", CommentViewSet, "comment")
+
 
 urlpatterns = urlpatterns = [
     path("", include(router.urls)),
