@@ -1,7 +1,10 @@
 from rest_framework import serializers
 from newsapi.models import Comment
-from rest_framework import viewsets
+from rest_framework import viewsets, status
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
+from django.db import IntegrityError
+from rest_framework.exceptions import ValidationError
 
 
 class CommentSerializer(serializers.ModelSerializer):
@@ -23,3 +26,17 @@ class CommentViewSet(viewsets.ModelViewSet):
             return Response(serializer.data)
         else:
             return super().list(request)
+
+    def create(self, request):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+
+        try:
+            serializer.save(user=request.user)
+        except IntegrityError:
+            return Response(
+                {"error": "Failed to create comment. Duplicate entry."},
+                status=status.HTTP_400_BAD_REQUEST,
+            )
+
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
