@@ -1,0 +1,26 @@
+[
+    {
+      "model": "newsapi.mood",
+      "pk": 1,
+      "fields": {
+        "id": 1,
+        "name": "Happy"
+      }
+    },
+    {
+        "model": "newsapi.mood",
+        "pk": 2,
+        "fields": {
+          "id": 2,
+          "name": "Neutral"
+        }
+      },
+      {
+        "model": "newsapi.mood",
+        "pk": 3,
+        "fields": {
+          "id": 3,
+          "name": "Mad"
+        }
+      }
+]
