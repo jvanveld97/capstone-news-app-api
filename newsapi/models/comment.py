@@ -1,7 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.db.models.fields.related import ForeignKey
-from newsapi.models import Article
+from .mood import Mood
+from newsapi.models import article
 
 
 class Comment(models.Model):
@@ -10,6 +11,6 @@ class Comment(models.Model):
     comment = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     edited_at = models.DateTimeField(null=True, blank=True)
-
-    def __str__(self):
-        return f"Comment by {self.user.username} on {self.article_url}"
+    mood = models.ForeignKey(
+        Mood, on_delete=models.CASCADE, related_name="comments", null=True
+    )

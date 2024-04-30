@@ -8,6 +8,7 @@ python3 manage.py migrate newsapi
 python3 manage.py loaddata users
 python3 manage.py loaddata tokens
 python3 manage.py loaddata articles
+python3 manage.py loaddata moods
 python3 manage.py loaddata comments
 
 

@@ -1,5 +1,6 @@
 from rest_framework import serializers
-from newsapi.models import Comment
+from newsapi.models import Comment, Mood
+from .moods import MoodSerializer
 from rest_framework import viewsets, status
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
@@ -9,9 +10,19 @@ from rest_framework import permissions
 
 
 class CommentSerializer(serializers.ModelSerializer):
+    mood = MoodSerializer(read_only=True)
+
     class Meta:
         model = Comment
-        fields = "__all__"
+        fields = [
+            "id",
+            "user",
+            "article_url",
+            "comment",
+            "created_at",
+            "edited_at",
+            "mood",
+        ]
 
 
 class IsOwnerOrReadOnly(permissions.BasePermission):
@@ -43,19 +54,41 @@ class CommentViewSet(viewsets.ModelViewSet):
         else:
             return super().list(request)
 
+    # def create(self, request):
+    #     serializer = self.get_serializer(data=request.data)
+    #     serializer.is_valid(raise_exception=True)
+
+    #     try:
+    #         serializer.save(user=request.user)
+    #     except IntegrityError:
+    #         return Response(
+    #             {"error": "Failed to create comment. Duplicate entry."},
+    #             status=status.HTTP_400_BAD_REQUEST,
+    #         )
+
+    #     return Response(serializer.data, status=status.HTTP_201_CREATED)
+
     def create(self, request):
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
 
+        mood_id = request.data.get("mood")
+        if mood_id:
+            mood = Mood.objects.get(id=mood_id)
+        else:
+            mood = None
+
         try:
-            serializer.save(user=request.user)
+            comment = serializer.save(user=request.user, mood=mood)
         except IntegrityError:
             return Response(
                 {"error": "Failed to create comment. Duplicate entry."},
                 status=status.HTTP_400_BAD_REQUEST,
             )
 
-        return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(
+            self.serializer_class(comment).data, status=status.HTTP_201_CREATED
+        )
 
     def destroy(self, request, *args, **kwargs):
         try:
@@ -64,6 +97,21 @@ class CommentViewSet(viewsets.ModelViewSet):
             return Response(
                 {"message": str(ex)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
             )
+
+    # def update(self, request, *args, **kwargs):
+    #     instance = self.get_object()
+    #     serializer = self.get_serializer(instance, data=request.data, partial=True)
+    #     serializer.is_valid(raise_exception=True)
+
+    #     # Check if the user is the owner of the comment
+    #     if instance.user != request.user:
+    #         return Response(
+    #             {"error": "You are not authorized to update this comment."},
+    #             status=status.HTTP_403_FORBIDDEN,
+    #         )
+
+    #     serializer.save()
+    #     return Response(serializer.data)
 
     def update(self, request, *args, **kwargs):
         instance = self.get_object()
@@ -77,5 +125,11 @@ class CommentViewSet(viewsets.ModelViewSet):
                 status=status.HTTP_403_FORBIDDEN,
             )
 
-        serializer.save()
-        return Response(serializer.data)
+        mood_id = request.data.get("mood")
+        if mood_id:
+            mood = Mood.objects.get(id=mood_id)
+        else:
+            mood = None
+
+        updated_instance = serializer.save(mood=mood)
+        return Response(self.serializer_class(updated_instance).data)
