@@ -15,6 +15,8 @@ def get_news_data(country, api_key, category=None):
 
 
 class ArticleSerializer(serializers.ModelSerializer):
+    published_at = serializers.DateTimeField(format="%Y-%m-%dT%H:%M:%SZ")
+
     class Meta:
         model = Article
         fields = [
