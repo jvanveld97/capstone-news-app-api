@@ -9,6 +9,7 @@ from newsapi.views import (
     UserSavedArticleViewSet,
     TopicViewSet,
     TopicArticlesView,
+    SummarizerView,
 )
 
 router = routers.DefaultRouter(trailing_slash=False)
@@ -17,9 +18,10 @@ router.register(r"saved_articles", UserSavedArticleViewSet, "saved_article")
 router.register(r"comments", CommentViewSet, "comment")
 router.register(r"moods", MoodsViewSet, "mood")
 router.register("topics", TopicViewSet, basename="topic")
+router.register(r"summarizer", SummarizerView, "summary")
 
 
-urlpatterns = urlpatterns = [
+urlpatterns = [
     path("topics/articles", TopicArticlesView.as_view(), name="topic-articles"),
     path("", include(router.urls)),
     path("login", UserViewSet.as_view({"post": "user_login"}), name="login"),

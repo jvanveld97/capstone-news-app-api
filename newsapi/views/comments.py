@@ -54,20 +54,6 @@ class CommentViewSet(viewsets.ModelViewSet):
         else:
             return super().list(request)
 
-    # def create(self, request):
-    #     serializer = self.get_serializer(data=request.data)
-    #     serializer.is_valid(raise_exception=True)
-
-    #     try:
-    #         serializer.save(user=request.user)
-    #     except IntegrityError:
-    #         return Response(
-    #             {"error": "Failed to create comment. Duplicate entry."},
-    #             status=status.HTTP_400_BAD_REQUEST,
-    #         )
-
-    #     return Response(serializer.data, status=status.HTTP_201_CREATED)
-
     def create(self, request):
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
@@ -97,21 +83,6 @@ class CommentViewSet(viewsets.ModelViewSet):
             return Response(
                 {"message": str(ex)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
             )
-
-    # def update(self, request, *args, **kwargs):
-    #     instance = self.get_object()
-    #     serializer = self.get_serializer(instance, data=request.data, partial=True)
-    #     serializer.is_valid(raise_exception=True)
-
-    #     # Check if the user is the owner of the comment
-    #     if instance.user != request.user:
-    #         return Response(
-    #             {"error": "You are not authorized to update this comment."},
-    #             status=status.HTTP_403_FORBIDDEN,
-    #         )
-
-    #     serializer.save()
-    #     return Response(serializer.data)
 
     def update(self, request, *args, **kwargs):
         instance = self.get_object()
