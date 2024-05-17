@@ -40,14 +40,18 @@ This guide will help you set up and run your Django server using the debugger in
 
 1. **Open Visual Studio Code:** Open your project directory in Visual Studio Code.
 
-2. **Ensure interpreter is set to the virtual environment:**
+2. **Activate the virtual environment:**
+   - In your terminal, navigate to the project directory.
+   - Run `pipenv shell` to activate the virtual environment.
+
+3. **Ensure interpreter is set to the virtual environment:**
    - CMD + Shift + P and select Python: Select Interpreter
    - Select the interpreter that corresponds to your virtual environment in your terminal (e.g., `/.local/share/virtualenvs/jv-capstone-news-api-L1uKDuQa/bin/activate`).
 
-3. **Start the debugger:**
+4. **Start the debugger:**
    - Press `F5` or click on the green play button in the Debug view.
 
-4. **Verify server is running:**
+5. **Verify server is running:**
    - Open your terminal in VS code to verify that your Django server is running.
 
      (e.g., `Watching for file changes with StatReloader
