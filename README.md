@@ -38,7 +38,7 @@ This guide will help you set up and run your Django server using the debugger in
 
 ## Start the Debugger
 
-1. **Open Visual Studio Code:** Open your Django project directory in Visual Studio Code.
+1. **Open Visual Studio Code:** Open your project directory in Visual Studio Code.
 
 2. **Ensure interpreter is set to the virtual environment:**
    - CMD + Shift + P and select Python: Select Interpreter
